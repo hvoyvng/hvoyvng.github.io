@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .topContainer {
+    display: grid;
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .botContainer {
+    display:grid;
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .firstRow, .thirdRow, .fifthRow, .seventhRow {
+    background-color: red;
+  }
+
+  .ninethRow, .eleventhRow, .thirteenthRow {
+    background-color: red;
+  }
+
+  .stars {
+    grid-row: 1 / span 7;
+    background-color: blue;
+  }
+
+</style>
+
+<body>
+  <div class="topContainer">
+    <div class="stars"></div>
+    <div class="firstRow"></div>
+    <div class="secondRow"></div>
+    <div class="thirdRow"></div>
+    <div class="forthRow"></div>
+    <div class="fifthRow"></div>
+    <div class="sixthRow"></div>
+    <div class="seventhRow"></div>
+  </div>
+
+  <div class="botContainer">
+    <div class="eighthRow"></div>
+    <div class="ninethRow"></div>
+    <div class="tenthRow"></div>
+    <div class="eleventhRow"></div>
+    <div class="twelvethRow"></div>
+    <div class="thirteenthRow"></div>
+  </div>
+</body>
+</html>
